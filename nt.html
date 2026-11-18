@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    <body>
+   
+        <div class="calculadora">
+            <h2>calculadora</h2>
+
+            <input type="number" id = "numero1" placeholder="primeiro numero">
+
+            <input type = "number" id = "numero2" placeholder="segundo numero">
+
+            <button onclick="somar()">somar</button>
+
+            <h3 id = "resultado">resultado: </h3>
+        </div>
+
+        <script>
+            function somar() {
+                let numero1 = Number(document.getElementById("numero1").value);
+
+                let numero2 = Number(document.getElementById("numero2").value);
+
+                 let resultado = numero1 + numero2 
+
+                document.getElementById("resultado").innerText = 
+                " resultado:" + resultado;
+}
+
+        </script>
+    </body>
+</html>
